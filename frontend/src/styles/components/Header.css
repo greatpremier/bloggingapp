@@ -1,0 +1,6 @@
+.navbar {
+    background-color: rgb(188, 156, 218);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}

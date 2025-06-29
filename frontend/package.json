@@ -1,0 +1,67 @@
+{
+  "name": "blogging",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "fortawesome": "^0.0.1-security",
+    "quill": "^2.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.26.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fortawesome/free-solid-svg-icons": "file:../../../../usr/local/lib/node_modules/@fortawesome/free-solid-svg-icons",
+    "@fortawesome/react-fontawesome": "file:../../../../usr/local/lib/node_modules/@fortawesome/react-fontawesome",
+    "@lexical/clipboard": "^0.32.1",
+    "@lexical/code": "^0.32.1",
+    "@lexical/history": "^0.32.1",
+    "@lexical/html": "^0.32.1",
+    "@lexical/link": "^0.32.1",
+    "@lexical/list": "^0.32.1",
+    "@lexical/plain-text": "^0.32.1",
+    "@lexical/react": "^0.32.1",
+    "@lexical/rich-text": "^0.32.1",
+    "@lexical/selection": "^0.32.1",
+    "@lexical/table": "^0.32.1",
+    "@lexical/utils": "^0.32.1",
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.3",
+    "lexical": "^0.32.1",
+    "postcss": "^8.5.6",
+    "react-icons": "file:../../../../usr/local/lib/node_modules/react-icons",
+    "tailwindcss": "^3.4.17"
+  }
+}

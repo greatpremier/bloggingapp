@@ -1,0 +1,129 @@
+/* Basic editor container styles */
+.editor-container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /* Lexical editor content area */
+  .editor-content {
+    min-height: 200px; /* Adjust as needed */
+    outline: none; /* Remove default focus outline */
+    padding: 10px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Theme classes for various elements (from config.js) */
+  .editor-paragraph {
+    margin-bottom: 1em;
+  }
+  
+  .editor-h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .editor-h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .editor-h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .editor-ul, .editor-ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+  }
+  
+  .editor-listitem {
+    margin-bottom: 0.5em;
+  }
+  
+  .editor-quote {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    margin-left: 15px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1em;
+  }
+  
+  .editor-link {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  /* Text formatting */
+  .editor-text-bold {
+    font-weight: bold;
+  }
+  
+  .editor-text-italic {
+    font-style: italic;
+  }
+  
+  .editor-text-underline {
+    text-decoration: underline;
+  }
+  
+  .editor-text-strikethrough {
+    text-decoration: line-through;
+  }
+  
+  .editor-text-code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  
+  /* Toolbar styles (example) */
+  .editor-toolbar {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* For responsiveness */
+  }
+  
+  .toolbar-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 30px; /* Adjust for icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .toolbar-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .toolbar-button.active {
+    background-color: #d0e7ff;
+    border-color: #a3c9ff;
+  }
+  
+  .toolbar-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }

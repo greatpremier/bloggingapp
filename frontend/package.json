@@ -43,8 +43,8 @@
     ]
   },
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "file:../../../../usr/local/lib/node_modules/@fortawesome/free-solid-svg-icons",
-    "@fortawesome/react-fontawesome": "file:../../../../usr/local/lib/node_modules/@fortawesome/react-fontawesome",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@lexical/clipboard": "^0.32.1",
     "@lexical/code": "^0.32.1",
     "@lexical/history": "^0.32.1",

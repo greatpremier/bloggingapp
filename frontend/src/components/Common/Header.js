@@ -2,6 +2,7 @@ import { Link, Router } from "react-router-dom"
 import Search from "./Search"
 import BlogPostEditor from "../Blog/BlogpostEditor"
 import Test from "./Test"
+import GutenbergEditor from "../Blog/GutenbergEditor"
 
 const NavBar = () => {
   return(
@@ -22,6 +23,7 @@ const Header = () => {
         <Link to='test/editor'>profile page</Link>
         <Test />
         <BlogPostEditor />
+        <GutenbergEditor />
       </div>
     )
 }

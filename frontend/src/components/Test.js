@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 // --- Mock Data (Replace with actual API calls to Django) ---
-import '../index.css'; // Importing Tailwind CSS styles
 
 const mockPosts = [
   {

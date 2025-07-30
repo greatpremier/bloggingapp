@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import '../../styles/components/Header.css'
 
 const Search = () => {
-    const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
   const [data, setData] = useState([]);
 
   useEffect(() => {

@@ -1,16 +1,16 @@
 from django.db import models
 
 # Create your models here.
-class User(models.Model):
+class AppUser(models.Model):
     role = models.CharField(max_length=200)
     user_name = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.user_name
+        return self.user_name + ' ' + self.role
     
 
 class Content(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(AppUser, on_delete=models.CASCADE)
     drafts = models.CharField(max_length=1000)
     publishes = models.CharField(max_length=1000)
 
@@ -19,7 +19,7 @@ class Content(models.Model):
     
 
 class Categories(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(AppUser, on_delete=models.CASCADE)
     publishes = models.CharField(max_length=1000)
 
     def __str__(self):
@@ -27,5 +27,5 @@ class Categories(models.Model):
 
 
 class Interaction(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(AppUser, on_delete=models.CASCADE)
     comments = models.CharField(max_length=1000)        

@@ -8,11 +8,17 @@ import Editor from './components/Blog/Editor';
 import Notifications from './components/Common/Notifications';
 import Profile from './components/Blog/Profile';
 import Test from './components/Test';
+import Tester from './components/Tester';
+import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
+import Home from './components/Common/Home';
+import { AuthProvider } from './components/Auth/AuthContext';
 
 function App() {
   return (
     <div>
-      <Header />
+      <Home />
+      <AuthProvider>
       <Routes>
         <Route path='/editor' element={<Editor />} />
         <Route path='/search' element={<Search/>} />
@@ -21,7 +27,10 @@ function App() {
         <Route path='test' element={<Test/>}>
         <Route path='notifications' element={<Notifications/>}/>
         </Route>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
       </Routes>
+      </AuthProvider>
     </div>
   );
 }

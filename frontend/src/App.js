@@ -17,16 +17,15 @@ import { AuthProvider } from './components/Auth/AuthContext';
 function App() {
   return (
     <div>
-      <Home />
       <AuthProvider>
       <Routes>
+        <Route path='/' element={<Home/>} />
         <Route path='/editor' element={<Editor />} />
         <Route path='/search' element={<Search/>} />
         <Route path='/notifications' element={<Notifications/>} />
         <Route path='/profile' element={<Profile/>}/>
-        <Route path='test' element={<Test/>}>
+        <Route path='test' element={<Test/>}/>
         <Route path='notifications' element={<Notifications/>}/>
-        </Route>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
       </Routes>

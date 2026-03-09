@@ -22,6 +22,7 @@ function App() {
       <AuthProvider>
       <Navbar />
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/editor' element={<Editor />} />
         <Route path='/search' element={<Search/>} />
         <Route path='/notifications' element={<Notifications/>} />
